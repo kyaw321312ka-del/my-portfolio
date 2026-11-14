@@ -3,7 +3,7 @@
 Welcome to my personal developer portfolio!  
 This site showcases my experience, projects, and technical skills as a full-stack web developer.
 
-🔗 **Live Preview:** [kayzinkhaing.github.io/my-portfolio](https://kayzinkhaing.github.io/my-portfolio)
+🔗 **Live Preview:** [kyaw321312ka-del.github.io/my-portfolio](https://kyaw321312ka-del.github.io/my-portfolio)
 
 ---
 
@@ -28,7 +28,7 @@ This site showcases my experience, projects, and technical skills as a full-stac
 
 ## 📸 Preview
 
-![Portfolio Screenshot](assets/images/portfolio.png) <!-- Optional, update path if needed -->
+![Portfolio Screenshot](assets/images/Screenshot 2026-11-14 113008.png) <!-- Optional, update path if needed -->
 
 ---
 
@@ -36,6 +36,6 @@ This site showcases my experience, projects, and technical skills as a full-stac
 
 ```bash
 # Clone the repository
-git clone https://github.com/kayzinkhaing/my-portfolio.git
+git clone https://github.com/kyaw321312ka-del/my-portfolio.git
 
 # Open index.html in your browser
