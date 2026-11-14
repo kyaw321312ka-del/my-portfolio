@@ -1,142 +1,98 @@
 [
   {
-    "name": "PHP",
-    "icon": "https://img.icons8.com/offices/48/000000/php-logo.png"
+    "name": "Backend Development",
+    "skills": [
+      { "name": "PHP", "icon": "https://img.icons8.com/offices/48/000000/php-logo.png" },
+      { "name": "Laravel", "icon": "https://img.icons8.com/ios-filled/50/fa314a/laravel.png" },
+      { "name": "Node.js", "icon": "https://cdn.simpleicons.org/nodedotjs" },
+      { "name": "Express.js", "icon": "https://cdn.simpleicons.org/express" },
+      { "name": "NestJS", "icon": "https://cdn.simpleicons.org/nestjs" },
+      { "name": "C#", "icon": "https://img.icons8.com/color/48/c-sharp-logo.png" },
+      { "name": "ASP.NET Core", "icon": "https://img.icons8.com/color/48/asp.png" }
+    ]
   },
   {
-    "name": "Laravel",
-    "icon": "https://img.icons8.com/ios-filled/50/fa314a/laravel.png"
+    "name": "Frontend Development",
+    "skills": [
+      { "name": "JavaScript", "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png" },
+      { "name": "TypeScript", "icon": "https://img.icons8.com/color/48/000000/typescript.png" },
+      { "name": "React", "icon": "https://img.icons8.com/color/48/react-native.png" },
+      { "name": "Vue.js", "icon": "https://img.icons8.com/color/48/000000/vue-js.png" },
+      { "name": "HTML5", "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png" },
+      { "name": "CSS3", "icon": "https://img.icons8.com/color/48/000000/css3.png" },
+      { "name": "Tailwind CSS", "icon": "https://cdn.simpleicons.org/tailwindcss" },
+      { "name": "Bootstrap", "icon": "https://img.icons8.com/color/48/000000/bootstrap.png" },
+      { "name": "jQuery", "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png" }
+    ]
   },
   {
-    "name": "C#",
-    "icon": "https://img.icons8.com/color/48/c-sharp-logo.png"
+    "name": "Mobile Development",
+    "skills": [
+      { "name": "Flutter", "icon": "https://cdn.simpleicons.org/flutter" },
+      { "name": "Dart", "icon": "https://cdn.simpleicons.org/dart" },
+      { "name": "React Native", "icon": "https://img.icons8.com/color/48/react-native.png" }
+    ]
   },
   {
-    "name": "ASP.NET Core",
-    "icon": "https://img.icons8.com/color/48/asp.png"
+    "name": "Database & Data Management",
+    "skills": [
+      { "name": "MySQL", "icon": "https://img.icons8.com/color/48/000000/mysql.png" },
+      { "name": "PostgreSQL", "icon": "https://img.icons8.com/color/48/000000/postgreesql.png" },
+      { "name": "Microsoft SQL Server", "icon": "https://img.icons8.com/color/48/microsoft-sql-server.png" },
+      { "name": "MongoDB", "icon": "https://img.icons8.com/color/48/000000/mongodb.png" },
+      { "name": "Redis", "icon": "https://www.svgrepo.com/show/303460/redis-logo.svg" },
+      { "name": "Prisma ORM", "icon": "https://cdn.simpleicons.org/prisma" }
+    ]
   },
   {
-    "name": "React",
-    "icon": "https://img.icons8.com/color/48/react-native.png"
+    "name": "API & Integration",
+    "skills": [
+      { "name": "REST API", "icon": "https://cdn.simpleicons.org/openapi" },
+      { "name": "GraphQL", "icon": "https://img.icons8.com/color/48/000000/graphql.png" },
+      { "name": "gRPC", "icon": "https://grpc.io/img/logos/grpc-icon-color.png" },
+      { "name": "JWT", "icon": "https://cdn.simpleicons.org/jsonwebtokens" },
+      { "name": "OAuth 2.0", "icon": "https://cdn.simpleicons.org/auth0" },
+      { "name": "RabbitMQ", "icon": "https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg" },
+      { "name": "Kafka", "icon": "https://cdn.simpleicons.org/apachekafka" },
+      { "name": "Stripe", "icon": "https://cdn.simpleicons.org/stripe" },
+      { "name": "PayPal", "icon": "https://cdn.simpleicons.org/paypal" },
+      { "name": "Firebase", "icon": "https://img.icons8.com/color/48/000000/firebase.png" },
+      { "name": "Appwrite", "icon": "https://cdn.simpleicons.org/appwrite" }
+    ]
   },
   {
-    "name": "VueJS",
-    "icon": "https://img.icons8.com/color/48/000000/vue-js.png"
+    "name": "DevOps & Deployment",
+    "skills": [
+      { "name": "Docker", "icon": "https://img.icons8.com/color/48/docker.png" },
+      { "name": "Nginx", "icon": "https://img.icons8.com/color/48/nginx.png" },
+      { "name": "Linux", "icon": "https://img.icons8.com/color/48/linux.png" },
+      { "name": "Ubuntu", "icon": "https://cdn.simpleicons.org/ubuntu" },
+      { "name": "DigitalOcean", "icon": "https://www.vectorlogo.zone/logos/digitalocean/digitalocean-icon.svg" },
+      {
+    "name": "LightNode",
+    "icon": "https://www.google.com/s2/favicons?domain=lightnode.com&sz=64"
   },
   {
-    "name": "React Native",
-    "icon": "https://img.icons8.com/color/48/react-native.png"
+    "name": "Namecheap",
+    "icon": "https://www.google.com/s2/favicons?domain=namecheap.com&sz=64"
+  },
+      { "name": "AWS", "icon": "https://img.icons8.com/color/48/amazon-web-services.png" },
+      { "name": "GitHub Actions", "icon": "https://img.icons8.com/color/48/github--v1.png" },
+      { "name": "PM2", "icon": "https://cdn.simpleicons.org/pm2" },
+      { "name": "Cloudflare", "icon": "https://cdn.simpleicons.org/cloudflare" }
+    ]
   },
   {
-    "name": "TypeScript",
-    "icon": "https://img.icons8.com/color/48/000000/typescript.png"
-  },
-  {
-    "name": "JavaScript",
-    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-  },
-  {
-    "name": "jQuery",
-    "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
-  },
-  {
-    "name": "HTML5",
-    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-  },
-  {
-    "name": "CSS3",
-    "icon": "https://img.icons8.com/color/48/000000/css3.png"
-  },
-  {
-    "name": "TailwindCSS",
-    "icon": "https://cdn.simpleicons.org/tailwindcss"
-  },
-  {
-    "name": "Bootstrap",
-    "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
-  },
-  {
-    "name": "MySQL",
-    "icon": "https://img.icons8.com/color/48/000000/mysql.png"
-  },
-  {
-    "name": "PostgreSQL",
-    "icon": "https://img.icons8.com/color/48/000000/postgreesql.png"
-  },
-  {
-    "name": "MSSQL Server",
-    "icon": "https://img.icons8.com/color/48/microsoft-sql-server.png"
-  },
-  {
-    "name": "MongoDB",
-    "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
-  },
-  {
-    "name": "Redis",
-    "icon": "https://www.svgrepo.com/show/303460/redis-logo.svg"
-  },
-  {
-    "name": "GraphQL",
-    "icon": "https://img.icons8.com/color/48/000000/graphql.png"
-  },
-  {
-    "name": "gRPC",
-    "icon": "https://grpc.io/img/logos/grpc-icon-color.png"
-  },
-  {
-    "name": "RabbitMQ",
-    "icon": "https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg"
-  },
-  {
-    "name": "Kafka",
-    "icon": "https://cdn.simpleicons.org/apachekafka"
-  },
-  {
-    "name": "Firebase",
-    "icon": "https://img.icons8.com/color/48/000000/firebase.png"
-  },
-  {
-    "name": "Docker",
-    "icon": "https://img.icons8.com/color/48/docker.png"
-  },
-  {
-    "name": "Nginx",
-    "icon": "https://img.icons8.com/color/48/nginx.png"
-  },
-  {
-    "name": "DigitalOcean",
-    "icon": "https://www.vectorlogo.zone/logos/digitalocean/digitalocean-icon.svg"
-  },
-  {
-    "name": "AWS",
-    "icon": "https://img.icons8.com/color/48/amazon-web-services.png"
-  },
-  {
-    "name": "GitHub Actions",
-    "icon": "https://img.icons8.com/color/48/github--v1.png"
-  },
-  {
-    "name": "Linux",
-    "icon": "https://img.icons8.com/color/48/linux.png"
-  },
-  {
-    "name": "Vite",
-    "icon": "https://vitejs.dev/logo.svg"
-  },
-  {
-    "name": "Git",
-    "icon": "https://img.icons8.com/color/48/000000/git.png"
-  },
-  {
-    "name": "GitHub",
-    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
-  },
-  {
-    "name": "Postman",
-    "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
-  },
-  {
-    "name": "Figma",
-    "icon": "https://img.icons8.com/color/48/000000/figma--v1.png"
+    "name": "Development Tools",
+    "skills": [
+      { "name": "Git", "icon": "https://img.icons8.com/color/48/000000/git.png" },
+      { "name": "GitHub", "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png" },
+      { "name": "Postman", "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" },
+      { "name": "Bruno", "icon": "https://cdn.simpleicons.org/bruno" },
+      { "name": "Figma", "icon": "https://img.icons8.com/color/48/000000/figma--v1.png" },
+      { "name": "Vite", "icon": "https://vitejs.dev/logo.svg" },
+      { "name": "Composer", "icon": "https://cdn.simpleicons.org/composer" },
+      { "name": "npm", "icon": "https://cdn.simpleicons.org/npm" }
+    ]
   }
 ]

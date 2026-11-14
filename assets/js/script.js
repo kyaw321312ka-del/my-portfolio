@@ -115,13 +115,18 @@ async function fetchSkills() {
 function showSkills(skills) {
   const container = document.getElementById('skillsContainer');
   if (!container) return;
-  container.innerHTML = skills.map(skill => `
-    <div class="bar">
-      <div class="info">
-        <img src="${skill.icon}" alt="${skill.name} icon" loading="lazy" onerror="this.hidden = true">
-        <span>${skill.name}</span>
-      </div>
-    </div>
+  container.innerHTML = skills.map(category => `
+    <article class="skill-category">
+      <h3>${category.name}</h3>
+      <p class="skill-list">
+        ${category.skills.map(skill => `
+          <span class="skill-item">
+            <img src="${skill.icon}" alt="" loading="lazy" onerror="this.hidden = true">
+            <span>${skill.name}</span>
+          </span>
+        `).join('')}
+      </p>
+    </article>
   `).join('');
 }
 
