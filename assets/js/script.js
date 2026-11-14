@@ -44,6 +44,37 @@ $(document).ready(function () {
     $('.navbar').removeClass('active');
   });
 
+  // EmailJS init and form handling
+  emailjs.init('WtMS1n4F-0SXc8wbM');
+
+  $('#contact-form').submit(function (e) {
+    e.preventDefault();
+    $('#hidden-time').val(new Date().toLocaleString());
+    $('#loading-spinner').css('display', 'flex');
+
+    emailjs.sendForm('service_mpaf61f', 'template_23eswyx', '#contact-form')
+      .then(function () {
+        $('#loading-spinner').hide();
+        $('#success-modal').css('display', 'flex');
+        $('#contact-form')[0].reset();
+      })
+      .catch(function (error) {
+        console.error('Email failed:', error);
+        $('#loading-spinner').hide();
+      });
+  });
+
+  // Close modal logic
+  $('#close-modal').click(function () {
+    $('#success-modal').hide();
+  });
+
+  $(window).click(function (event) {
+    if ($(event.target).is('#success-modal')) {
+      $('#success-modal').hide();
+    }
+  });
+
 });
 
 

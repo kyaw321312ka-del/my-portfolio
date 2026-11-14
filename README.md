@@ -11,7 +11,7 @@ This site showcases my experience, projects, and technical skills as a full-stac
 
 - ✨ Interactive and responsive design
 - 📁 Project showcase with GitHub/code/demo links
-- 📬 Direct contact links and social profiles
+- 📬 Contact form powered by [EmailJS](https://www.emailjs.com/)
 - 🌙 Dark/light theme toggle *(if added)*
 - 📱 Mobile-first layout
 
@@ -20,6 +20,7 @@ This site showcases my experience, projects, and technical skills as a full-stac
 ## 🧰 Built With
 
 - **HTML5**, **CSS3**, **JavaScript (jQuery)**
+- **EmailJS** – Contact form backend
 - **Font Awesome** – Icons
 - **GitHub Pages** – Hosting
 
