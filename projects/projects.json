@@ -1,5 +1,67 @@
 [
     {
+        "name": "NYX Sports & Active Lifestyle Mobile Application",
+        "desc": "A feature-rich Flutter app that brings sports retail, facility reservations, training enrollment, tournament information, and account management together in one platform, backed by REST APIs.",
+        "image": "nyx_mobile.jpg",
+        "category": "mobile",
+        "role": "Flutter Mobile App Developer",
+        "technologies": ["Flutter", "Dart", "Provider", "flutter_bloc (Cubit)", "REST APIs", "HTTP", "SharedPreferences", "Git", "GitHub Actions"],
+        "responsibilities": [
+            {
+                "title": "Mobile UI Development",
+                "description": "Built reusable Flutter widgets and responsive screens for the dashboard, catalog, cart, facility rentals, training, tournaments, and account management."
+            },
+            {
+                "title": "E-commerce",
+                "description": "Implemented product and category browsing, tag filters, product details, cart quantity and stock validation, totals, checkout, and order history."
+            },
+            {
+                "title": "Facility Booking",
+                "description": "Created venue and court discovery, availability and time-slot selection, reservations, walk-in booking, payment selection, and booking history."
+            },
+            {
+                "title": "Training and Tournaments",
+                "description": "Integrated training discovery and enrollment with payment workflows, plus tournament details, schedules, rankings, and enrollment."
+            },
+            {
+                "title": "REST API Integration",
+                "description": "Connected authentication, profiles, product catalogs, training, tournaments, bookings, payment methods, and order processing to backend APIs."
+            },
+            {
+                "title": "Architecture",
+                "description": "Used a feature-first, layered structure, applying Clean Architecture in selected modules with repositories, domain entities, use cases, and remote data sources."
+            },
+            {
+                "title": "State Management",
+                "description": "Used Provider and ChangeNotifier for shared services and feature controllers, with Cubits for catalog, recommendations, and checkout workflows."
+            },
+            {
+                "title": "Authentication and Sessions",
+                "description": "Implemented registration, login, OTP verification, password recovery, profile updates, and local session management with SharedPreferences."
+            },
+            {
+                "title": "Error Handling",
+                "description": "Added shared API error handling, user-facing messages, loading states, and retryable error views for network and data-fetching failures."
+            },
+            {
+                "title": "Device Integration",
+                "description": "Integrated image selection, screenshot capture, content sharing, runtime permissions, and external URL launching with Flutter plugins."
+            },
+            {
+                "title": "Automated Testing and CI/CD",
+                "description": "Configured GitHub Actions for formatting checks, static analysis, tests, and Android APK builds uploaded as workflow artifacts."
+            },
+            {
+                "title": "Maintainability and Testing",
+                "description": "Organized features into separate modules and added tests for selected shop catalog and checkout Cubit behavior, plus a startup widget smoke test."
+            }
+        ],
+        "links": {
+            "view": "#",
+            "code": "#"
+        }
+    },
+    {
         "name": "Daily Need Items - Microservices Marketplace",
         "desc": "A production-grade marketplace spanning e-commerce, food delivery, and ride-hailing. Designed with independently deployable services, asynchronous workflows, and resilient cross-service communication.",
         "image": "dni.png",

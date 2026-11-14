@@ -486,21 +486,88 @@
 </section>
 
 <!-- work project section starts -->
+
 <section class="work" id="work">
-  <h2 class="heading">
-  <span class="icon"><i class="fas fa-laptop-code"></i></span>
-  <span class="text">Projects <strong>Made</strong></span>
-</h2>
-    <div class="project-carousel-viewport">
-        <div class="project-grid" aria-live="polite"></div>
-        <div class="project-carousel-controls" aria-label="Project navigation">
-            <button class="project-arrow project-prev" type="button" aria-label="Previous project"><i class="fas fa-arrow-left"></i></button>
-            <div class="project-dots" role="tablist" aria-label="Choose a project"></div>
-            <button class="project-arrow project-next" type="button" aria-label="Next project"><i class="fas fa-arrow-right"></i></button>
+    <div class="work-container">
+
+        <!-- Section Heading -->
+        <div class="work-header">
+            <div class="work-heading-content">
+                <span class="work-eyebrow">
+                    <i class="fas fa-code"></i>
+                    MY PORTFOLIO
+                </span>
+
+                <h2 class="heading">
+                    Projects <span>I've Built</span>
+                </h2>
+
+                <p class="work-description">
+                    A collection of applications and solutions I've developed,
+                    showcasing my experience in full-stack development,
+                    database design, API integration, and deployment.
+                </p>
+            </div>
+
+            <div class="work-header-icon" aria-hidden="true">
+                <i class="fas fa-laptop-code"></i>
+            </div>
         </div>
+
+        <!-- Project Carousel -->
+        <div class="project-carousel-viewport">
+
+            <div
+                class="project-grid"
+                aria-live="polite"
+                aria-label="My projects">
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div class="project-carousel-controls"
+                 aria-label="Project navigation">
+
+                <button
+                    class="project-arrow project-prev"
+                    type="button"
+                    aria-label="Previous project">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+                <div class="project-navigation-info">
+                    <div
+                        class="project-dots"
+                        role="tablist"
+                        aria-label="Choose a project">
+                    </div>
+                </div>
+
+                <button
+                    class="project-arrow project-next"
+                    type="button"
+                    aria-label="Next project">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Bottom Information -->
+        <div class="work-footer">
+            <span>
+                <i class="fas fa-layer-group"></i>
+                Built with passion and continuous learning
+            </span>
+
+            <a href="#contact" class="work-contact-link">
+                Let's work together
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
     </div>
-  
 </section>
+
 <!-- work project section ends -->
 
 <div class="project-modal" id="project-modal" aria-hidden="true">
@@ -514,8 +581,13 @@
             <p class="project-modal-kicker">Project details</p>
             <h2 id="project-modal-title"></h2>
             <p id="project-modal-description"></p>
+            <p class="project-modal-role" id="project-modal-role"></p>
             <div class="project-modal-tags" id="project-modal-tags"></div>
-            <div class="project-modal-links">
+            <section class="project-modal-responsibilities" id="project-modal-responsibilities-section" hidden>
+                <h3>Key Features &amp; Responsibilities</h3>
+                <ul id="project-modal-responsibilities"></ul>
+            </section>
+            <div class="project-modal-links" id="project-modal-links">
                 <a id="project-modal-view" href="" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View</a>
                 <a id="project-modal-code" href="" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a>
             </div>
@@ -790,7 +862,7 @@
 
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
-<script src="./assets/js/script.js?v=8"></script>
+<script src="./assets/js/script.js?v=13"></script>
 
 </body>
 </html>

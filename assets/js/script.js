@@ -199,7 +199,7 @@ async function initModernProjectCarousel() {
   }
   track.innerHTML = projects.map(project => `
     <article class="project-card" tabindex="0" aria-label="${project.name} project">
-      <div class="project-card-image">
+      <div class="project-card-image${project.category === 'mobile' ? ' project-card-image-portrait' : ''}">
         <img src="./assets/images/projects/${project.image}" alt="${project.name} project image" draggable="false" loading="lazy">
       </div>
       <div class="project-card-body">
@@ -209,8 +209,12 @@ async function initModernProjectCarousel() {
           ${project.technologies.map(technology => `<span>${technology}</span>`).join('')}
         </div>
         <div class="project-card-links">
-          <a href="${project.links.view}" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View</a>
-          <a href="${project.links.code}" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a>
+          ${project.links.view && project.links.view !== '#'
+            ? `<a href="${project.links.view}" target="_blank" rel="noopener"><i class="fas fa-eye"></i> View</a>`
+            : '<button type="button" class="project-details-trigger"><i class="fas fa-eye"></i> View</button>'}
+          ${project.links.code && project.links.code !== '#'
+            ? `<a href="${project.links.code}" target="_blank" rel="noopener"><i class="fas fa-code"></i> Code</a>`
+            : ''}
         </div>
       </div>
     </article>
@@ -249,7 +253,11 @@ async function initModernProjectCarousel() {
 
   function layout() {
     const isMobile = window.innerWidth <= 600;
-    const spacing = isMobile ? 190 : window.innerWidth <= 1000 ? 210 : Math.min(360, window.innerWidth * 0.25);
+    const spacing = isMobile
+      ? 170
+      : window.innerWidth <= 1000
+        ? 230
+        : 310;
     const visibleRange = isMobile ? 1 : 2;
 
     cards.forEach((card, index) => {
@@ -284,18 +292,29 @@ async function initModernProjectCarousel() {
   }
 
   const modal = document.querySelector('#project-modal');
+  const modalImageWrap = document.querySelector('.project-modal-image-wrap');
   const modalImage = document.querySelector('#project-modal-image');
   const modalTitle = document.querySelector('#project-modal-title');
   const modalDescription = document.querySelector('#project-modal-description');
+  const modalRole = document.querySelector('#project-modal-role');
   const modalTags = document.querySelector('#project-modal-tags');
+  const modalResponsibilitiesSection = document.querySelector('#project-modal-responsibilities-section');
+  const modalResponsibilities = document.querySelector('#project-modal-responsibilities');
+  const modalLinks = document.querySelector('#project-modal-links');
   const modalView = document.querySelector('#project-modal-view');
   const modalCode = document.querySelector('#project-modal-code');
   const closeModalButtons = modal ? modal.querySelectorAll('[data-modal-close]') : [];
 
   function setModalLink(link, url) {
-    link.href = url || '#';
-    link.classList.toggle('is-disabled', !url || url === '#');
-    link.setAttribute('aria-disabled', String(!url || url === '#'));
+    const isAvailable = Boolean(url && url !== '#');
+    if (isAvailable) {
+      link.href = url;
+    } else {
+      link.removeAttribute('href');
+    }
+    link.classList.toggle('is-disabled', !isAvailable);
+    link.setAttribute('aria-disabled', String(!isAvailable));
+    link.hidden = !isAvailable;
   }
 
   function openModal(index) {
@@ -308,11 +327,19 @@ async function initModernProjectCarousel() {
     modalImage.decoding = 'async';
     modalImage.src = imageSource;
     modalImage.alt = `${project.name} project image`;
+    modalImageWrap.classList.toggle('is-portrait', project.category === 'mobile');
     modalTitle.textContent = project.name;
     modalDescription.textContent = project.desc;
+    modalRole.textContent = project.role ? `Role: ${project.role}` : '';
+    modalRole.hidden = !project.role;
     modalTags.innerHTML = project.technologies.map(technology => `<span>${technology}</span>`).join('');
+    modalResponsibilities.innerHTML = (project.responsibilities || []).map(item => `
+      <li><strong>${item.title}:</strong> ${item.description}</li>
+    `).join('');
+    modalResponsibilitiesSection.hidden = !project.responsibilities?.length;
     setModalLink(modalView, project.links.view);
     setModalLink(modalCode, project.links.code);
+    modalLinks.hidden = modalView.hidden && modalCode.hidden;
     isModalOpen = true;
     modal.classList.add('is-visible');
     modal.setAttribute('aria-hidden', 'false');
@@ -343,7 +370,13 @@ async function initModernProjectCarousel() {
     const card = event.target.closest('.project-card');
     if (!card) return;
     const index = cards.indexOf(card);
-    if (isModalOpen || event.target.closest('a')) return;
+    if (isModalOpen) return;
+    if (event.target.closest('.project-details-trigger')) {
+      current = index;
+      openModal(index);
+      return;
+    }
+    if (event.target.closest('a')) return;
     if (index !== current) {
       current = index;
       layout();
